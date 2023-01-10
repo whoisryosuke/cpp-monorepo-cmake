@@ -1,0 +1,4 @@
+struct Markdown
+{
+    bool published;
+};
