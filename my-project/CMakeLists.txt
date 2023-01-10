@@ -5,5 +5,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # Create an executable for your project
 add_executable(${NAME} main.cpp)
 
+# Link libraries
+target_link_libraries(${NAME} Core)
+
 # Include sub-projects (allows importing of header/cpp files)
-target_link_libraries(${NAME} Core) 
+# target_include_directories(${PROJECT_NAME} PUBLIC
+#                           "../core"
+#                           )
