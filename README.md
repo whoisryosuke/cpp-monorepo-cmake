@@ -16,6 +16,8 @@ The main entry point is `/my-project/main.cpp` - that becomes `my-project.exe`. 
    - You could also open the `.sln` file and run `Build Solution` for the same result.
 4. Your `.exe` should be available in `build\Debug\`
 
+> You'll notice doing the above method, if you make new files in Visual Studio, they go in the `/build` folder instead of the project root. You can skip making the `build` folder and condense it all in one folder. Might need to update the `.gitignore` to ignore build files/cache files in root.
+
 ## How it works
 
 This project uses CMake to scaffold project files for build compilers (like Visual Studio Solution files).
