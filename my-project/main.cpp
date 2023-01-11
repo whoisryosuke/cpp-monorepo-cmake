@@ -1,8 +1,14 @@
 #include <iostream>
-using namespace std;
+#include "Core.h"
 
 int main()
 {
-    cout << "Hello World!";
-    return 0;
+    auto markdown = new Markdown{
+        true
+    };
+
+    auto text = markdown->published ? "True" : "False";
+
+    std::cout << "Hello World!\n";
+    std::cout << text;
 }
